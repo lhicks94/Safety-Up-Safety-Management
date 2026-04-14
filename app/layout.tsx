@@ -1,18 +1,18 @@
+import type { ReactNode } from "react";
+
 export const metadata = {
   title: "Safety Up",
+  description: "Safety Management Application"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
-``
